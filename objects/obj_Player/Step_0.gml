@@ -25,16 +25,36 @@ if place_meeting(x + xsped, y, obj_wall)
 	//Set Xsped to 0 to "collide"
 	xsped = 0;
 }
-
+	
 x += xsped;
 
+with (obj_Player) {
+	if (x < 0) {
+		sprite_index = sprPlayer_left;
+	} else if (x > 0) {
+		sprite_index = sprPlayer_right;	
+	}
+}
 
 //Y Movement
- ysped += grav
+ysped += grav
+
+if place_meeting(x, y + ysped, obj_wall)
+{
+	var _pixelCheck = _subPixel * sign(ysped);
+	while !place_meeting(x, y + _pixelCheck, obj_wall)
+	{
+		y += _pixelCheck;
+	}
+	ysped = 0;
+}	
+
+y += ysped;
+
+	
+	
  
- if ysped > termVel { ysped = termVel; }
- 
- 
+
 
 
 
