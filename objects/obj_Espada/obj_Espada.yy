@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Player",
+  "%Name":"obj_Espada",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Player",
+  "name":"obj_Espada",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"armas",
+    "path":"folders/objects/armas.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Arma",
+    "path":"objects/obj_Arma/obj_Arma.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlayer_right",
-    "path":"sprites/sprPlayer_right/sprPlayer_right.yy",
+    "name":"spr_Sword",
+    "path":"sprites/spr_Sword/spr_Sword.yy",
   },
   "spriteMaskId":null,
   "visible":true,
